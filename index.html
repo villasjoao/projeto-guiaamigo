@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Guia Amigo</title>
+    <link rel="icon" href="imagens/bus3.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+        
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- NAV -->
+    <div class="  d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black border-bottom shadow-sm">
+        <a href="index.html" class="navbar-brand my-0 mr-md-auto font-weight-normal ">
+            <span class="img-logo">Guia Amigo</span>
+          </a>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="btn-customn distanciamento font-color" href="pontos.html">Pontos Turísticos</a>
+        </nav>
+       <div class="divisorr"> 
+       </div>
+
+       
+       <li class="">
+        <a id="font-entrar" data-target="#" href="#" data-toggle="dropdown" role="button"
+         aria-haspopup="true" aria-expanded="false">Entrar</a>
+  <ul class="dropdown-menu baixo desable btn-customent" aria-labelledby="entrar">
+    <div class="col-md-12"> 
+        <br />
+      <form method="post" action="" id="formLogin">
+        <div class="form-group">
+          <input type="text" class="form-control" id="campo_usuario" name="usuario" placeholder="Usuário" />
+        </div>
+        
+        <div class="form-group">
+          <input type="password" class="form-control red" id="campo_senha" name="senha" placeholder="Senha" />
+        </div>
+        
+        
+        <button type="buttom" class="btn btn-primary" id="btn_login">Entrar</button>
+        <!-- <a class="btn-customn distanciamento font-color" data-target="modalturista"
+        data-target="#modalturista"
+        href="#modalturista">Não tem uma conta?</a> -->
+
+        <button type="button" class="btn-customn distanciamento 
+        font-color btn btn-custom btn-verde " data-toggle="modal"7
+                   data-target="#modalturista">Não tem uma conta? </button>
+        <br /><br />
+        
+      </form>
+    </form>
+    </ul>
+      </li>
+      </div>
+              <div class="capa">  
+                <div class="texto-capa">
+                  <h1>Não Viaje Sozinho, Viaje Com Um Amigo</h1>
+                     <!-- Botão para acionar modal -->
+                  <button type="button" class=" btn btn-custom btn-laranja btn-lg" data-toggle="modal"7
+                   data-target="#modalturista">
+                      Cadastre-se
+                    </button> 
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalturista" tabindex="-1" role="dialog"
+ aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+  
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+  
+          <!-- Paginas do modal -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Turista</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Ajude o Guia Amigo</a>
+            </li>
+            
+          </ul>
+  
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+  
+              <!--Body-->
+                
+	    <div class="container cormodal">
+          <br /><br />
+          <div class="col-md-1"></div>
+          <div class="col-md-12">
+            <h3>Cadastre-Se</h3>
+            <br />
+          <form method="post" action="" id="formCadastrarse">
+            <div class="form-group">
+                  
+              <input type="text" class="form-control" id="usuario" name="usuario"
+               placeholder="Usuário" required="requiored" >
+            </div>
+  
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="requiored">
+            </div>
+            
+            <div class="form-group">
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required="requiored">
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Aceito Receber Informações do Guia Amigo
+                  </label>
+                </div>
+              </div>
+            
+            <button type="submit" class="btn btn-primary form-control">Inscreva-se</button>
+          </form>
+        </div>
+        <div class="col-md-4"></div>
+  
+        <div class="clearfix"></div>
+        <br />
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+  
+      </div>
+
+  
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" 
+                data-dismiss="modal">Fechar</button>
+              </div>
+  
+            </div>
+           
+  
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+  
+              <!--Body ajude-->
+              <div class="container cormodal">
+                  <br /><br />
+                  <div class="col-md-1"></div>
+                  <div class="col-md-12">
+                    <h3>Help</h3>
+                    <br />
+                  <form method="post" action="" id="formCadastrarse">
+                    
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="requiored">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" 
+                        placeholder="Ajude o Guia Amigo com a sua ideia para o nosso projeto" rows="3"></textarea>
+                      </div>
+                
+                    
+                    <button type="submit" class="btn btn-primary form-control">Enviar</button>
+                  </form>
+
+                  <div class="modal-footer">
+                      <div class="options text-center text-md-right mt-1">
+                        
+                      </div>
+                      <button type="button" class="btn btn-outline-info waves-effect ml-auto" 
+                      data-dismiss="modal">Fechar</button>
+                    </div>
+        
+                  </div>
+                 
+            
+              </div>
+            
+              </div>
+              <!--Footer-->
+              
+            </div>
+            <!--/.Panel 8-->
+          </div>
+  
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
+  
+
+                </div>
+              </div>
+              <section id="servicos">
+                  <div class="container">
+                    <div class="row">
+                      <!-- albuns -->
+                      <div id="carouselExampleControls" 
+                      class="carousel slide  col-md-6 rotacao "
+                       data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active ">
+                                <img src="imagens/img1slide.jpg" alt="First slide"  id="img-tamc" >
+                                  <div class="carousel-caption d-none d-md-block">
+                                  </div>
+                                </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="imagens/img2slide.jpg" 
+                              alt="Second slide"  id="img-tamc2">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="imagens/img3slide.jpg" alt="Third slide"  id="img-tamc">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>  
+            
+                      <!-- servicos -->
+                      <div class="col-md-6">
+                        <h2>Guia Amigo:</h2>
+            
+                        <p>Viajar é legal, mas e viajar com um guia que te leve nos melhores 
+                          restaurantes, bares, baladas, parques, campo de paintball por um preço asbsurdo de barato, neste 
+                        caso lembre-se do Guia Amigo, somos eficazes em localizar os melhores guias locais para que você fique a vontade
+                      de escolher conforme o seu interesse. </p>
+            
+                        <p>Cadastre-se, persooalize seu perfil, encontre seu destino e selecione seu guia conforme listado, poste fotos 
+                          da viagem, use a <b>#GuiaAmigoÉDemais</b>, avalie o guia, comente, tenha a liberdade da mesma maneira que uma viagem te oferece.</p>
+            
+                        <h3>Contato com o Guia</h3>
+                        <p>O contato com o Guia sera feito por meio de um Chat liberado assim que o Turista realizar a compra do pacote</p>
+                        
+                        <h3>Formas de pagamento</h3>
+                        <p>As formas de pagamentos são todas ONLINE, através de cartões e boletos.</p>
+                      </div>  
+            
+                    </div>
+                  </div>
+                </section>
+              
+             
+          
+              <section id="recursos">
+                <div class="container">
+                  <div class="row">
+                      
+                     
+                        
+              <!--carousel -->
+                
+                    
+                      </div><!-- /row -->
+          
+                    </div>
+          
+                  </div>
+                </div>
+              </section>
+          
+              
+          
+              <!-- Rodape -->
+              <footer id="rodape">
+                <div class="container">
+                  <div class="row">
+                    
+                    <div class="col-md-2">
+                      <span class="img-logo"></span>
+                    </div>
+                    
+          
+                    <div class="col-md-2">
+                        <p id="flaranjaredes"><b>Nossas Redes:</b></p>
+                        <a href="https://www.facebook.com/Guia-Amigo-2433154213572617/" class="redes">
+                            <span class="img-rede"></span>
+                          </a>
+
+                          <a href="https://www.instagram.com/guiaamigo/" class="redes2">
+                              <span class="img-rede"></span>
+                            </a>
+                    </div>
+                    
+          
+                    <div class="col-md-2 flaranja">
+                        <p><b>Sobre nós</b></p>
+                      <ul class="nav">
+                        <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-4">
+                      <ul class="nav">
+                        <li class="item-rede-social img-footer" ><a href=""><img src="imagens/play.png" id="img-footer"></a></li>
+                      </ul>
+                    </div>
+                   
+                  </div><!-- /row -->
+                </div>
+              </footer>
+          
+              <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          
+              <!-- Include all compiled plugins (below), or include individual files as needed -->
+              <script src="bootstrap/js/bootstrap.min.js"></script>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
